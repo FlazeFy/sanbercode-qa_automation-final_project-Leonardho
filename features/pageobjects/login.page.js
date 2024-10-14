@@ -21,7 +21,7 @@ class LoginPage extends Page {
     }
 
     get btnRegister () {
-        return $('.css-4rvv7a');
+        return $('.css-4rvv7a a');
     }
 
     /**
@@ -39,7 +39,6 @@ class LoginPage extends Page {
         if(title == 'register'){
             await this.btnRegister.click();
         }
-        await browser.pause(5000);
     }
 
     /**

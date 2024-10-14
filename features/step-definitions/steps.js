@@ -38,7 +38,8 @@ Then(/^I should be on the (\w+) page$/, async (pageName) => {
     const currentUrl = await browser.getUrl();
     const expectedUrls = {
         login: 'login',
-        dashboard: 'dashboard',
+        register: 'register',
+        dashboard: 'dashboard'
     };
 
     await expect(currentUrl).toContain(expectedUrls[pageName]);
